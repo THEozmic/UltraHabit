@@ -157,3 +157,14 @@ svg {
 .day--active {
   background-color: #ffc107;
 }
+.default-display {
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 40px;
+  font-weight: 600;
+  color: #7d7d7d;
+  letter-spacing: 1px;
+  padding: 15px;
+  text-align: center;
+}

@@ -27,19 +27,28 @@ export default class Home extends Component {
   };
 
   render() {
-    let habits = this.state.habits;
-    return (
-      <div className="habits">
-        {this.state.habits.map(habit => {
-          return (
-            <Habit
-              key={habit.id}
-              habit={habit}
-              updateHabits={this.updateHabits}
-            />
-          );
-        })}
-      </div>
-    );
+    let habits = this.state.habits || [];
+    let returnedComponent;
+    if (habits.length === 0) {
+      returnedComponent = (
+        <div className="default-display">Please create a new habit</div>
+      );
+    } else {
+      returnedComponent = (
+        <div className="habits">
+          {habits.map(habit => {
+            return (
+              <Habit
+                key={habit.id}
+                habit={habit}
+                updateHabits={this.updateHabits}
+              />
+            );
+          })}
+        </div>
+      );
+    }
+
+    return returnedComponent;
   }
 }
