@@ -1,0 +1,159 @@
+@import "button.css";
+@import "input.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ecf0f9;
+}
+
+svg {
+  width: 100%;
+}
+
+.root {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 45px 0px;
+}
+
+.header {
+  width: 100%;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  position: fixed;
+  top: 0;
+}
+
+.form {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px 0 rgba(42, 51, 83, 0.12),
+    0 5px 15px rgba(0, 0, 0, 0.06);
+  margin: 30px;
+  padding: 20px;
+  width: 300px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.habits {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  grid-gap: 10px;
+  margin: 20px;
+}
+
+.habit {
+  background-color: #fff;
+  border-radius: 4px;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.habit__name {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e91e63;
+  padding: 0 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.habit__name--large {
+  font-size: 20px;
+  padding: 0;
+  width: 60vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.habit__details {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #607d8b;
+  padding: 0 20px;
+}
+
+.habit__status {
+  background-color: #e91e63;
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.habit__status label {
+  padding: 5px;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.habit__status:hover {
+  color: #ecf0f9;
+}
+
+.habit__footer {
+  display: flex;
+}
+
+.habit__footer > * {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.history {
+  margin: 20px 0;
+  min-width: 80%;
+}
+
+.history__header {
+  display: flex;
+  align-items: center;
+}
+
+.history__duration {
+  font-size: 14px;
+  color: #ea6696;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.history__close {
+  margin-left: auto;
+}
+
+.days {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(16px, 1fr));
+  grid-gap: 4px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  grid-template-columns: repeat(auto-fill, 16px);
+  box-shadow: 0 15px 35px 0 rgba(42, 51, 83, 0.12),
+    0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.day {
+  height: 16px;
+  background-color: #fef2d4;
+}
+
+.day--active {
+  background-color: #ffc107;
+}

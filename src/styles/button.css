@@ -1,0 +1,44 @@
+.button {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.button--danger {
+  background-color: #607d8b;
+  color: white;
+}
+
+.button--fullscreen {
+  background-color: #e91e63;
+  color: #fff;
+  margin: 0;
+  width: 100%;
+  padding: 18px;
+}
+
+.button--primary {
+  background-color: #e91e63;
+  color: #fff;
+}
+
+.button--secondary {
+  background-color: #fec108;
+}
+
+.button--no-radius {
+  border-radius: 0;
+}
+
+.button--secondary:hover {
+  color: #e81e63;
+}
